@@ -41,8 +41,155 @@ button {
   cursor: pointer;
 }
 
-/* body {
-  background-color: #F5FAFF; 
-  background-color: #3B6F96;
-  color: #3B6F96
-} */
+.navbar {
+  margin-top: 20px;
+
+  width: 100%;
+
+  font-family: sans-serif;
+}
+
+.navbar__container {
+  display: flex;
+  max-width: 1400px;
+  
+  margin: auto;
+  padding: 0.8rem 2rem;
+
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--secundary-color);
+  border-radius: 20px;
+}
+
+.navbar__menu {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.navbar__link {
+  color: #a1a1a1;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar__link:hover {
+  color: #6188A2;
+}
+
+.navbar__logo-link {
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.2rem;
+
+  font-size: 2rem;
+  color: #727272;
+}
+
+.navbar__logo-img {
+  width: 30px;
+  height: 40px;
+}
+
+.navbar__actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar__search {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar__search-input {
+  width: auto;
+  padding: 0.6rem 1rem;
+
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 12px;
+}
+
+.navbar__search-input::placeholder {
+  color: #a1a1a1;
+}
+
+.navbar__search-input:focus {
+  outline: none;
+  border: none;
+}
+
+.navbar__search-button {
+  padding: 0.6rem;
+  
+  align-items: center;
+
+  background-color: var(--primary-color);
+  border-radius: 50%;
+
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar__search-button:hover {
+  background-color: #6188A2;
+  color: var(--primary-color);
+}
+
+.navbar__icons {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.navbar__icon {
+  padding: 0.6rem;
+  
+  align-items: center;
+
+  background-color: var(--primary-color);
+  border-radius: 50%;
+
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar__icon--blue {
+  background-color: #6188A2;
+  color: var(--primary-color);
+}
+
+.navbar__icon:hover {
+  background-color: #6188A2;
+  color: var(--primary-color);
+}
+
+.navbar__profile {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.navbar__profile-img {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar__profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar__profile-name {
+  font-size: 0.9rem;
+}
+
+.navbar__profile-link {
+  font-size: 0.6rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar__profile-link:hover {
+  color: #6188A2;
+}
