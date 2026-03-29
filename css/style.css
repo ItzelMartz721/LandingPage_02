@@ -1,3 +1,11 @@
+/* Global variables */
+
+:root {
+  --primary-color: #F5FAFF;
+  --secundary-color: #ECF1F5;
+  --max-width: 1200px;
+}
+
 /* Reset básico */
 *,
 *::before,
@@ -8,6 +16,7 @@
 }
 
 body {
+  background-color: var(--primary-color);
   font-family: sans-serif;
   line-height: 1.5;
 }
@@ -15,6 +24,10 @@ body {
 a {
   text-decoration: none;
   color: #000;
+}
+
+li {
+  list-style: none;
 }
 
 img {
