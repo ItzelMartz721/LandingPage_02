@@ -1,3 +1,9 @@
+/* Fonts */
+@font-face {
+  font-family: 'PlayFair';
+  src: url(/assets/fonts/PlayFair/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
 /* Global variables */
 
 :root {
