@@ -22,6 +22,16 @@
 
   /* Layout */
   --max-width: 1200px;
+  --border-radius: 20px;
+
+  /* Spacing*/
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+
+  /* Transiciones */
+  --transition: all 0.3s ease;
 }
 
 /* Reset básico */
