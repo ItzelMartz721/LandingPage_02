@@ -44,14 +44,14 @@
 }
 
 body {
-  background-color: var(--primary-color);
+  background-color: var(--color-bg-main);
   font-family: sans-serif;
   line-height: 1.5;
 }
 
 a {
   text-decoration: none;
-  color: #000;
+  color: inherit;
 }
 
 li {
