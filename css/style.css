@@ -1,8 +1,26 @@
 /* Global variables */
 
 :root {
-  --primary-color: #F5FAFF;
-  --secundary-color: #ECF1F5;
+  /* Colores principales */
+  --color-primary: #356D94;
+  --color-primary-light: #A7C5D0;
+  --color-primary-lighter: #ECF1F5;
+
+  /* Neutrales */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-gray: #a1a1a1;
+
+  /* Fondo */
+  --color-bg-main: #F5FAFF;
+  --color-bg-secondary: #ECF1F5;
+
+  /* Texto */
+  --text-color-main: #333333;
+  --text-color-light: #a1a1a1;
+  --text-color-white: #FFFFFF;
+
+  /* Layout */
   --max-width: 1200px;
 }
 
