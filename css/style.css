@@ -226,6 +226,42 @@ button {
   color: #6188A2;
 }
 
+/* Styles Hero Section */
+.hero {
+  position: relative;
+
+  margin-top: var(--spacing-md);
+  padding: 0 var(--spacing-lg);
+
+  min-height: 75vh;
+  
+  background: linear-gradient(to right, #A7C5D0, #A9C8DA);
+}
+
+.hero__background-wrapper {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.hero__background-text {
+  position: absolute;
+  top: -25%;
+  font-family: 'PlayFair';
+  font-size: 30vw;
+  font-weight: 700;
+  color: #9FC0D1;
+  opacity: 0.6;
+}
+
+.hero__background-text:nth-child(1) {
+  left: 25%;
+}
+
+.hero__background-text:nth-child(2) {
+  right: 0;
+}
 
 /* *****************
 *                  *
