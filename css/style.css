@@ -228,14 +228,18 @@ button {
 
 /* Styles Hero Section */
 .hero {
-  position: relative;
-
   margin-top: var(--spacing-md);
-  padding: 0 var(--spacing-lg);
-
-  min-height: 75vh;
+}
   
+.hero__box {
+  position: relative;
   background: linear-gradient(to right, #A7C5D0, #A9C8DA);
+  border-radius: var(--border-radius);
+  max-width: var(--max-width);
+  min-height: 75vh;
+  margin: 0 auto;
+  padding: 0 var(--spacing-xs);
+  overflow: hidden;
 }
 
 .hero__background-wrapper {
@@ -247,20 +251,98 @@ button {
 
 .hero__background-text {
   position: absolute;
-  top: -25%;
+  top: -30%;
+  left: 20%;
   font-family: 'PlayFair';
-  font-size: 30vw;
+  font-size: 28vw;
   font-weight: 700;
+  letter-spacing: 20px;
   color: #9FC0D1;
-  opacity: 0.6;
 }
 
-.hero__background-text:nth-child(1) {
-  left: 25%;
+/* Hero content */
+.hero__container {
+  display: flex;
+  max-width: 100%;
+  justify-content: start;
+  gap: var(--spacing-xs);
 }
 
-.hero__background-text:nth-child(2) {
-  right: 0;
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+  max-width: 340px;
+  z-index: 1;
+}
+
+.hero__title {
+  font-family: 'Aboreto';
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.4;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.hero__title-accent {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: bolder;
+}
+
+.hero__description {
+  margin-top: 10px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  line-height: 1;
+  color: var(--color-primary-lighter);
+}
+
+/* Hero image */
+.hero__image-wrapper {
+  display: flex;
+  max-width: 50%;
+  align-items: center;
+  z-index: 1;
+}
+
+.hero__image {
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
+}
+
+/* Hero actions */
+.hero__actions {
+  display: flex;
+  margin-top: var(--spacing-md);
+  gap: var(--spacing-sm);
+}
+
+.hero__button {
+  padding: 0.2rem var(--spacing-xs);
+
+  border-radius: var(--border-radius);
+
+  text-transform: capitalize;
+  color: var(--color-primary-lighter);
+
+  transition: var(--transition);
+}
+
+.hero__button--dark {
+  background-color: var(--color-primary);
+}
+
+.hero__button--light {
+  border: 2px solid var(--color-primary);
+}
+
+.hero__button:hover {
+  background-color: #083a54;
 }
 
 /* *****************
